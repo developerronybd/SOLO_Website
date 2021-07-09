@@ -1,0 +1,152 @@
+/*==========================================
+                Mobile Menu 
+ ==========================================*/
+.navbar-header{
+    position:relative;
+    
+}
+
+#mobile-nav-open-btn{
+    font-size: 30px; 
+    color: #f4c613;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    /* Hide Mobole nav open btn */
+    display: none;
+}
+#mobile-nav {
+    height:0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, .7);
+    transition: all 300ms linear;
+    overflow: hidden;
+
+}
+#mobile-nav-close-btn{
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    color: #212226;
+    font-width:400px;
+    cursor: pointer;
+    position: absolute;
+    top: -9px;
+    right: 14px;
+    transition: all 300ms linear;
+    
+    
+}
+#mobile-nav-content{
+    text-align: center;
+    width: 100%;
+    margin-top: 13px;
+    position:relative;
+    top: 10%;
+}
+
+#mobile-nav ul li{
+    margin-bottom: 28px;
+    
+}
+
+#mobile-nav a{
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    color: #212226;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline;
+    transition: .3s;
+    
+}
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus{
+    color: #f4c613;
+    background: none;
+    
+}
+/* mobile nav scroll spy active state  */
+.white-nav-top #mobile-nav ul.nav > li.active > a{
+    color: #f4c613;
+    font-weight: 500;
+}  
+
+
+/* =======================================
+        Bootstrap & Media Queries 
+=========================================*/
+/* large devices(Desktop & Laptop) */
+@media (min-width:1200px) and (max-width:1299px){
+    .site-nav-wrapper{
+        padding: 0 20px;        
+    }
+    
+}
+
+
+
+/* Medium Devices (Landscape Tablests & Medium Desktop */
+
+@media(min-width:992px) and (max-width:1199px){
+    .site-nav-wrapper{
+        padding: 0 ;        
+    }
+    /* Generic */
+    .vertical-heading h2{
+        font-size: 35px;
+    }
+    #mobile-nav-open-btn{
+        display: none
+    }
+}
+
+/* Medium Devices (Portrait  Tablests & Small Desktop */
+
+@media(min-width:768px) and (max-width:991px){
+     .site-nav-wrapper{
+        padding: 0 10px;        
+    }
+}
+
+/* Medium Devices (Portrait  Tablests & Small Desktop */
+
+@media(min-width:1px) and (max-width:767px){
+     #home-heading-1{
+        color: green;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width:767px){
+    /* Nevigation */
+    
+    .navbar{
+        padding: 20px 0;
+        
+    }
+     .navbar-collaps{
+        display: none;
+    }
+    .site-nav-wrapper,
+    .white-nav-top{
+        padding: 0;
+    }
+    /* Hide mobile menu open btn */
+    #mobile-nav-open-btn{
+        display: block;
+        
+    }
+   
+}
+
+
